@@ -1,0 +1,1 @@
+from .distillation.LSDS_SDXL_ControlNet_pipeline import LSDSSDXLControlNetPipeline

@@ -1,0 +1,115 @@
+#general
+seed: 0
+image: "assets/image/academic_cat.png"
+automatic_caption: false # If set to true, the prompt will be automatically generated from the input image. If set to false, the prompt field will be used as is.
+saving_resize: 256
+prompt: "A cat with an academic hat using a computer." # Try with "a Chinese dragon flying through the air on a dark background with smoke coming out of its mouth and tail."
+negative_prompt: ""
+
+
+# model
+generator:
+  image_H: 64
+  image_W: 64
+  std: 1.0
+  initialize_renderer: true
+  initialization_method: palette-bilinear # [kmeans, palette, nearest, palette-bilinear, palette-nearest].
+  kmeans_nb_colors: 6 # Number of colors to use for the kmeans initialization. Not applicable if initialization_method is not kmeans
+  init_distance : l1 # [cosine_similarity, l1, l2, zero, random]. Not applicable if initialization_method is in [palette-bilinear, palette-nearest]
+  palette: "assets/palettes/lospec/slowly.hex"
+  softmax_regularizer: 1.0
+  smooth_softmax: true
+  gumbel: true
+  tau: 1.0
+
+# train
+training:
+  steps: 10_001 # Typical value is 10_000-30_000
+  save_steps: 50
+  learning_rate: 0.025 # Typical value is 0.025
+  lr_scheduler: "constant_with_warmup" # ["constant", "linear", "cosine", "cosine_with_restarts", "polynomial", "constant_with_warmup", "piecewise_constant"]
+  lr_warmup_steps: 250
+  lr_step_rules: "0.05:25,0.1:50,0.2:75,0.3:100,0.4:125,0.5:150,0.6:175,0.7:200,0.8:225,0.9:250,1:1000,0.75:1500,0.5:2000,0.375:2500,0.25:3000,0.125:4000,0.1"
+  lr_cycles: 5
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_weight_decay: 0.01
+  adam_epsilon: 1.0e-08
+  clip_grad: true
+  max_grad_norm: 1.0
+  resize_mode: "bilinear" # nearest, bilinear, area, nearest-exact
+
+  # Additional loss parameters
+  fft_scale: 20.0 # The scale of the FFT loss. Set to 0.0 to disable. Typical value is 20.0.
+  # The following losses are not used by default, but are all different ways to enforce smoothness in the generated image. Set the corresponding scale to a value > 0 to use them.
+  tv_scale: 0.0
+  laplacian_scale: 0.0
+  laplacian_sigma: 0.75
+  laplacian_kernel: 5
+  laplacian_mode: "l1" # ["l1", "l2"]
+  gradient_loss_scale: 0.0
+  bilateral_scale: 0.0
+  bilateral_sigma_color: 1.0
+  bilateral_sigma_space: 1.0
+  bilateral_max_distance: 3
+
+ # Augmentation parameters
+  augmentation:
+    grayscale_prob: 0.2
+    hflip_prob: 0.5
+    distorsion_prob: .5
+    distorsion_scale: .3
+    random_tau: true # If true, use a random Tau value in [random_tau_min, random_tau_max] at each iteration for the Gumbel-Softmax. Only works if gumbel is set to true.
+    random_tau_min: 0.5
+    random_tau_max: 1.5
+
+
+# diffusion
+diffusion:
+  model_id: sdxl # [sdxl, ssd1b]. ssd1b is a smaller model that is faster to use, but less powerful.
+  vae_id: taesdxl # taesdxl, vae-16-fix."vae-16-fix" does not fit in 24GB of VRAM. 
+  lora_path: ~ # Exemples: [~, "goofyai/3d_render_style_xl", "nerijs/pixel-art-xl", "ostris/embroidery_style_lora_sdxl", "TheLastBen/Papercut_SDXL", "ostris/watercolor_style_lora_sdxl"]
+  lora_scale: 1.0 # Typically between 0.5 and 1.0
+  ldm_speed_up: false # Use torch.compile. Requires higher memory. Default: "false"
+  enable_xformers: false # Enable xformers. Default: "false"
+  gradient_checkpoint: false # Improve the memory usage at the expense of more computations. See https://github.com/cybertronai/gradient-checkpointing for more information. Default: "false"
+  
+  # Useful for generating images with the diffusion model, if no input image is provided and initialize_renderer=true.
+  num_inference_steps: 50 # The number of steps used for generating images with the diffusion model, if no input image is provided and initialize_renderer=true.
+  guidance_scale: 7.5 # This is used for the image generation if no input image is provided and initialize_renderer=true. For the guidance scale used in score distillation, see below.
+  num_references: 10 # The number of generated images to use as references for the diffusion model, if no input image is provided and initialize_renderer=true.
+
+controlnet:
+  use_controlnet: true
+  models_id: 
+    - canny_mid #[canny_small, canny_mid, canny]
+    - depth_mid #[depth_small, depth_mid, depth]
+  controlnet_conditioning_scale: 
+    - 0.15
+    - 0.15
+  canny_threshold1: 100
+  canny_threshold2: 200
+  canny_blur: true
+  canny_blur_radius: 1
+  control_guidance_start: 0.0 # The minimum timesteps at wich controlnet is used. Default is 0.0. Should be between 0.0 and 1.0
+  control_guidance_end: 1.0 # The maximum timesteps at wich controlnet is used. Default is 1.0. Should be between 0.0 and 1.0
+
+# caption
+caption:
+  blip_model_id: Salesforce/blip2-opt-2.7b # [Salesforce/blip2-opt-2.7b,  Salesforce/blip2-opt-6.7b, Salesforce/blip2-opt-6.7b-coco, Salesforce/blip2-flan-t5-xl, Salesforce/blip2-flan-t5-xxl]
+  min_new_tokens: 20
+  max_new_tokens: 75
+  query: "" # The query to use for captioning the image. Typically left as "", but can be set to a custom query.
+  skip_special_tokens: true
+
+# Score Distillation
+sd:
+  guidance_scale: 40.
+  grad_scale: 1.0
+  t_min: 0.02
+  t_max: 0.98
+  t_bound_max: 0.8
+  t_bound_reached: 0.5 # the fraction of epochs where the bound is reached  
+  sampling_method_t: "bounded_max" # ["uniform", "linear", "bounded_max"]
+  im_size : ~ # If not set, will use the default im_size for the used model
+  w_mode: "cumprod" # ["constant", "cumprod"]
