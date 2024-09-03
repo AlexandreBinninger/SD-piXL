@@ -7,14 +7,13 @@ export default function Bibtex({path}) {
 
   useEffect(() => {
     const fetchBib = async () => {
-      const response = await fetch({path});
+      const response = await fetch(path);
       const text = await response.text();
-      console.log(text)
       setBibContent(text);
     };
 
     fetchBib();
-  }, []);
+  }, [path]);
 
   return (
     <Box p={4} borderWidth="1px" borderRadius="lg">

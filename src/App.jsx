@@ -1,6 +1,8 @@
 import './App.css';
-import { ChakraProvider, Box, VStack, HStack, Heading, Text, Button, Image, Code } from '@chakra-ui/react';
+import { ChakraProvider, Box, VStack, HStack, Heading, Text, Button, Image, Icon } from '@chakra-ui/react';
+import { FaGithub } from 'react-icons/fa'; // Importing the GitHub icon from Font Awesome
 import Bibtex from './Bibtex';
+import Authors from './Authors';
 
 function App() {
   return (
@@ -12,15 +14,13 @@ function App() {
           SD-πXL: Generating Low-Resolution Quantized Imagery via Score Distillation
           </Heading>
           
-          <Text fontSize="lg" textAlign="center">
-            Authors: Name1 (Institution1), Name2 (Institution2), ...
-          </Text>
+          <Authors/>
           
           <HStack spacing={4} justify="center">
             <Button as="a" href="link-to-paper" colorScheme="blue">
               Read Full Paper
             </Button>
-            <Button as="a" href="link-to-code" colorScheme="green">
+            <Button as="a" href="link-to-code" colorScheme="green" leftIcon={<Icon as={FaGithub} />}>
               Source Code
             </Button>
           </HStack>
@@ -45,7 +45,7 @@ function App() {
             {/* <Code p={4} borderRadius="md" mt={2}>
               Citation text goes here...
             </Code> */}
-            <Bibtex path={'public/paper/cite.bib'}/>
+            <Bibtex path={'/SD-piXL/paper/cite.bib'}/>
           </Box>
         </VStack>
       </Box>
