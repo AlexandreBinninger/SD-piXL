@@ -316,7 +316,7 @@ If this work or this codebase is useful to you, please cite it using the bibtex 
 @article{Binninger:SDpiXL:2024,
 title={SD-piXL: Generating Low-Resolution Quantized Imagery via Score Distillation},
 author={Binninger, Alexandre and Sorkine-Hornung, Olga},
-journal={SIGGRAPH ASIA, Technical Papers},
+journal={SIGGRAPH ASIA 2024, Technical Papers},
 year={2024},
 doi={10.1145/3680528.3687570}
 }
