@@ -32,7 +32,7 @@ function App() {
             <Button as="a" href="https://github.com/AlexandreBinninger/SD-piXL" colorScheme="green" leftIcon={<Icon as={FaGithub} />}>
               Source Code
             </Button>
-            <Button as="a" href="https://doi.org/10.1145/3680528.3687570" colorScheme="green" leftIcon={<Icon as={FaGithub} />}>
+            <Button as="a" href="https://doi.org/10.1145/3680528.3687570" colorScheme="red">
               ACM 
             </Button>
           </HStack>
@@ -81,7 +81,7 @@ function App() {
         </TabPanels>
       </Tabs>
     </Box>
-    
+
           <Box>
             <Heading as="h2" size="xl">Citation</Heading>
             <Bibtex path={'/SD-piXL/paper/cite.bib'}/>
