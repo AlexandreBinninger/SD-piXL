@@ -1,9 +1,9 @@
 <h1 id="title" align="center">SD-πXL: Generating Low-Resolution Quantized Imagery via Score Distillation (SIGGRAPH Asia 2024)</h1>
 
 <p align="center">
-    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10-or?logo=python" alt="pyhton"></a>
-    <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow" alt="license"></a>
-    <a href="https://alexandrebinninger.github.io/SD-piXL"><img src="https://img.shields.io/badge/website-Gitpage-blue" alt="website"></a>
+    <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10-or?logo=python&style=plastic" alt="pyhton"></a>
+    <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic" alt="license"></a>
+    <a href="https://alexandrebinninger.github.io/SD-piXL"><img src="https://img.shields.io/badge/website-Gitpage-blue?style=plastic&logo=github&logoColor=white" alt="website"></a>
     <a href="https://doi.org/10.1145/3680528.3687570"><img src="https://img.shields.io/badge/DOI-10.1145%2F3680528.3687570-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
 
