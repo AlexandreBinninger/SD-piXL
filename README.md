@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://www.python.org/"><img src="https://img.shields.io/badge/python-3.10-or?logo=python" alt="pyhton"></a>
     <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow" alt="license"></a>
-    <!-- <a href="https://https://alexandrebinninger.com/"><img src="https://img.shields.io/badge/website-Gitpage-blue" alt="website"></a> TODO -->
+    <a href="https://alexandrebinninger.github.io/SD-piXL"><img src="https://img.shields.io/badge/website-Gitpage-blue" alt="website"></a>
     <a href="https://doi.org/10.1145/3680528.3687570"><img src="https://img.shields.io/badge/DOI-10.1145%2F3680528.3687570-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
 
