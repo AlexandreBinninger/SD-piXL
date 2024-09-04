@@ -43,7 +43,7 @@ You can also manually install the required packages via
 conda create --name SD-piXL python=3.10
 conda activate SD-piXL
 pip3 install torch torchvision torchaudio
-pip install matplotlib accelerate omegaconf einops transformers scipy tensorboard openai-clip xformers
+pip install matplotlib accelerate omegaconf einops transformers scipy tensorboard openai-clip xformers opencv-python
 pip install git+https://github.com/huggingface/diffusers
 pip3 install -U scikit-learn
 pip install -U peft
