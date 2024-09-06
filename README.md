@@ -7,10 +7,9 @@
     <a href="https://doi.org/10.1145/3680528.3687570"><img src="https://img.shields.io/badge/DOI-10.1145%2F3680528.3687570-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
 
+![SD-πXL](./assets/media/teaser.jpg)
 
 <div align="center">
-<!-- <img src="./assets/media/teaser.jpg" height="70%" width="auto" alt="SD-πXL"> -->
-![SD-πXL](./assets/media/teaser.jpg){: width="70%"}
 <p><strong>SD-πXL</strong>: Generating Low-Resolution Quantized Imagery via Score Distillation.</p>
 </div>
 <p align="center">
