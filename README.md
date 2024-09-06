@@ -9,7 +9,8 @@
 
 
 <div align="center">
-<img src="./assets/media/teaser.jpg" height="70%" width="auto" alt="SD-πXL">
+<!-- <img src="./assets/media/teaser.jpg" height="70%" width="auto" alt="SD-πXL"> -->
+![SD-πXL](./assets/media/teaser.jpg){: width="70%"}
 <p><strong>SD-πXL</strong>: Generating Low-Resolution Quantized Imagery via Score Distillation.</p>
 </div>
 <p align="center">
@@ -66,9 +67,9 @@ After completion of the program, intermediate and final results are stored in `w
 <p align="center">
   <table>
     <tr>
-      <td><img src="assets/image/academic_cat.png" alt="Input" width="256"></td>
-      <td><img src="assets/media/cat_final_argmax.png" alt="SD-πXL Output (argmax)" width="256"></td>
-      <td><img src="assets/media/cat_final_softmax.png" alt="SD-πXL Output (softmax)" width="256"></td>
+      <td><img src="assets/image/academic_cat.png" alt="Input" width="256px"></td>
+      <td><img src="assets/media/cat_final_argmax.png" alt="SD-πXL Output (argmax)" width="256px"></td>
+      <td><img src="assets/media/cat_final_softmax.png" alt="SD-πXL Output (softmax)" width="256px"></td>
     </tr>
     <tr>
       <td align="center">Input Image</td>
@@ -118,10 +119,10 @@ accelerate launch main.py --config config.yaml --seed 0 -pt "a Chinese dragon fl
 <p align="center">
   <table>
     <tr>
-      <td><img src="assets/image/chinese_dragon.png" alt="Input" width="192"></td>
-      <td><img src="assets/media/dragon_final_argmax.png" alt="SD-πXL Output (argmax)" width="192"></td>
-      <td><img src="assets/media/dragon_final_softmax.png" alt="SD-πXL Output (softmax)" width="192"></td>
-      <td><img src="assets/media/dragon_video.gif" alt="SD-πXL Output (softmax)" width="192"></td>
+      <td><img src="assets/image/chinese_dragon.png" alt="Input" width="192px"></td>
+      <td><img src="assets/media/dragon_final_argmax.png" alt="SD-πXL Output (argmax)" width="192px"></td>
+      <td><img src="assets/media/dragon_final_softmax.png" alt="SD-πXL Output (softmax)" width="192px"></td>
+      <td><img src="assets/media/dragon_video.gif" alt="SD-πXL Output (softmax)" width="192px"></td>
     </tr>
     <tr>
       <td align="center">Input Image</td>
@@ -149,14 +150,14 @@ By adding `--verbose` to the command, you will enter verbose mode. Not only will
 <p align="center">
   <table>
     <tr>
-      <td><img src="assets/media/dragon_initialization.png" alt="Initialization" width="96"></td>
-      <td><img src="assets/media/dragon_control_canny_mid.png" alt="Canny edge" width="96"></td>
-      <td><img src="assets/media/dragon_control_depth_mid.png" alt="Depth map" width="96"></td>
-      <td><img src="assets/media/dragon_augmented.png" alt="Augmentation" width="96"></td>
-      <td><img src="assets/media/dragon_gradient.png" alt="Gradient" width="96"></td>
-      <td><img src="assets/media/dragon_normalized_entropy.png" alt="Entropy" width="96"></td>
-      <td><img src="assets/media/dragon_hard_gumbel.png" alt="Gumbel Argmax" width="96"></td>
-      <td><img src="assets/media/dragon_soft_gumbel.png" alt="Gumbel Argmax" width="96"></td>
+      <td><img src="assets/media/dragon_initialization.png" alt="Initialization" width="96px"></td>
+      <td><img src="assets/media/dragon_control_canny_mid.png" alt="Canny edge" width="96px"></td>
+      <td><img src="assets/media/dragon_control_depth_mid.png" alt="Depth map" width="96px"></td>
+      <td><img src="assets/media/dragon_augmented.png" alt="Augmentation" width="96px"></td>
+      <td><img src="assets/media/dragon_gradient.png" alt="Gradient" width="96px"></td>
+      <td><img src="assets/media/dragon_normalized_entropy.png" alt="Entropy" width="96px"></td>
+      <td><img src="assets/media/dragon_hard_gumbel.png" alt="Gumbel Argmax" width="96px"></td>
+      <td><img src="assets/media/dragon_soft_gumbel.png" alt="Gumbel Argmax" width="96px"></td>
     </tr>
     <tr>
       <td align="center">Initialization</td>
@@ -234,16 +235,16 @@ This will save the results in a `results/` folder. On the latter example, you wo
 <p align="center">
   <table>
     <tr>
-      <td><img src="assets/media/layer_0.png" alt="Layer 0" width="96"></td>
-      <td><img src="assets/media/layer_1.png" alt="Layer 1" width="96"></td>
-      <td><img src="assets/media/layer_2.png" alt="Layer 2" width="96"></td>
-      <td><img src="assets/media/layer_3.png" alt="Layer 3" width="96"></td>
-      <td><img src="assets/media/layer_4.png" alt="Layer 4" width="96"></td>
-      <td><img src="assets/media/layer_5.png" alt="Layer 5" width="96"></td>
-      <td><img src="assets/media/layer_6.png" alt="Layer 6" width="96"></td>
-      <td><img src="assets/media/layer_7.png" alt="Layer 7" width="96"></td>
-      <td><img src="assets/media/layer_8.png" alt="Layer 8" width="96"></td>
-      <td><img src="assets/media/layer_9.png" alt="Layer 9" width="96"></td>
+      <td><img src="assets/media/layer_0.png" alt="Layer 0" width="96px"></td>
+      <td><img src="assets/media/layer_1.png" alt="Layer 1" width="96px"></td>
+      <td><img src="assets/media/layer_2.png" alt="Layer 2" width="96px"></td>
+      <td><img src="assets/media/layer_3.png" alt="Layer 3" width="96px"></td>
+      <td><img src="assets/media/layer_4.png" alt="Layer 4" width="96px"></td>
+      <td><img src="assets/media/layer_5.png" alt="Layer 5" width="96px"></td>
+      <td><img src="assets/media/layer_6.png" alt="Layer 6" width="96px"></td>
+      <td><img src="assets/media/layer_7.png" alt="Layer 7" width="96px"></td>
+      <td><img src="assets/media/layer_8.png" alt="Layer 8" width="96px"></td>
+      <td><img src="assets/media/layer_9.png" alt="Layer 9" width="96px"></td>
     </tr>
     <tr>
       <td align="center">Layer 0</td>
@@ -272,8 +273,8 @@ Alongside the layer decomposition, it also saves the result:
 <p align="center">
   <table>
     <tr>
-      <td><img src="assets/media/dragon_argmax_aquaverde.png" alt="Argmax - palete recolor" width="192"></td>
-      <td><img src="assets/media/dragon_softmax_aquaverde.png" alt="Softmax - palette recolor" width="192"></td>
+      <td><img src="assets/media/dragon_argmax_aquaverde.png" alt="Argmax - palete recolor" width="192px"></td>
+      <td><img src="assets/media/dragon_softmax_aquaverde.png" alt="Softmax - palette recolor" width="192px"></td>
     </tr>
     <tr>
       <td align="center">Argmax - Palette recolor</td>
@@ -289,10 +290,10 @@ Low-resolution images with low number of colors are particularly suitable for fa
 <p align="center">
   <table>
     <tr>
-    <td align="center"><img src="assets/media/rose_pixelart.png" alt="Rose Pixel Art" width="144"></td>
-    <td align="center"><img src="assets/media/rose_embroidery.png" alt="Rose Embrodery" width="144"></td>
-    <td align="center"><img src="assets/media/rose_beads.png" alt="Rose beads" width="144"></td>
-    <td align="center"><img src="assets/media/rose_bricks.png" alt="Rose Bricks" width="144"></td>
+    <td align="center"><img src="assets/media/rose_pixelart.png" alt="Rose Pixel Art" width="144px"></td>
+    <td align="center"><img src="assets/media/rose_embroidery.png" alt="Rose Embrodery" width="144px"></td>
+    <td align="center"><img src="assets/media/rose_beads.png" alt="Rose beads" width="144px"></td>
+    <td align="center"><img src="assets/media/rose_bricks.png" alt="Rose Bricks" width="144px"></td>
     </tr>
     <tr>
       <td align="center">SD-πXL</td>
