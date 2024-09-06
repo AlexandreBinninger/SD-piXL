@@ -46,6 +46,8 @@ if __name__ == '__main__':
                         help="force the models to be downloaded from huggingface.")
     parser.add_argument("--palette", default=None, type=str,
                         help="palette for rendering.")
+    parser.add_argument("-knc", "--kmeans_nb_colors", default=None, type=int,
+                        help="If kmeans is used, number of colors for kmeans.")
     parser.add_argument("--size", default=None, type=parse_tuple, help="Specify the size as a tuple, e.g., --size=32,32")
     parser.add_argument("--input_image", default=None, type=str,
                         help="input image for rendering.")
@@ -67,6 +69,8 @@ if __name__ == '__main__':
         del args.prompt
     if args.negative_prompt is None:
         del args.negative_prompt
+    if args.kmeans_nb_colors is None:
+        del args.kmeans_nb_colors
 
     args = merge_and_update_config(args)
     if args.palette not in [None, "None"]:
