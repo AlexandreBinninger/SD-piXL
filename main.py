@@ -69,8 +69,6 @@ if __name__ == '__main__':
         del args.prompt
     if args.negative_prompt is None:
         del args.negative_prompt
-    if args.kmeans_nb_colors is None:
-        del args.kmeans_nb_colors
 
     args = merge_and_update_config(args)
     if args.palette not in [None, "None"]:
@@ -81,6 +79,8 @@ if __name__ == '__main__':
         args.generator.image_W = int(args.size[1])
     if args.input_image not in [None, "None"]:
         args.image = args.input_image
+    if args.kmeans_nb_colors is not None:
+        args.generator.kmeans_nb_colors = args.kmeans_nb_colors
 
     set_seed(args.seed)
     main(args)
