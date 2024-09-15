@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="113.0" height="33.0" viewBox="-0.5 -0.5 113.0 33.0">
+<rect x="0" y="0" width="16" height="16" fill="#a9b2a2" />
+<rect x="0" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="0" y="16" width="16" height="16" fill="#788a87" />
+<rect x="0" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="16" y="0" width="16" height="16" fill="#576069" />
+<rect x="16" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="16" y="16" width="16" height="16" fill="#443846" />
+<rect x="16" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="32" y="0" width="16" height="16" fill="#665964" />
+<rect x="32" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="32" y="16" width="16" height="16" fill="#997f73" />
+<rect x="32" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="48" y="0" width="16" height="16" fill="#b0a987" />
+<rect x="48" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="48" y="16" width="16" height="16" fill="#f2ec8b" />
+<rect x="48" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="64" y="0" width="16" height="16" fill="#fbb954" />
+<rect x="64" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="64" y="16" width="16" height="16" fill="#cd683d" />
+<rect x="64" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="80" y="0" width="16" height="16" fill="#993d41" />
+<rect x="80" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="80" y="16" width="16" height="16" fill="#7a3045" />
+<rect x="80" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="96" y="0" width="16" height="16" fill="#45293f" />
+<rect x="96" y="0" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+<rect x="96" y="16" width="16" height="16" fill="#2e222f" />
+<rect x="96" y="16" width="16" height="16" fill="none" stroke="black" stroke-width="1.0"/>
+</svg>
