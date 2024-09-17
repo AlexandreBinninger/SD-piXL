@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/SD-piXL/static/css/main.31d6cfe0.css",
-    "main.js": "/SD-piXL/static/js/main.1991fb1a.js",
+    "main.js": "/SD-piXL/static/js/main.b6cada90.js",
     "index.html": "/SD-piXL/index.html",
-    "main.1991fb1a.js.map": "/SD-piXL/static/js/main.1991fb1a.js.map"
+    "main.b6cada90.js.map": "/SD-piXL/static/js/main.b6cada90.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.1991fb1a.js"
+    "static/js/main.b6cada90.js"
   ]
 }
