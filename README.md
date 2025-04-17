@@ -315,12 +315,21 @@ The embroidery was made using PFAFF® creative Icon 2 machine. The interlocking 
 If this work or this codebase is useful to you, please cite it using the bibtex entry below:
 
 ```
-@article{Binninger:SDpiXL:2024,
-title={SD-piXL: Generating Low-Resolution Quantized Imagery via Score Distillation},
-author={Binninger, Alexandre and Sorkine-Hornung, Olga},
-journal={SIGGRAPH ASIA 2024, Technical Papers},
-year={2024},
-doi={10.1145/3680528.3687570}
+@inproceedings{Binninger:SDpiXL:2024,
+author = {Binninger, Alexandre and Sorkine-Hornung, Olga},
+title = {SD-πXL: Generating Low-Resolution Quantized Imagery via Score Distillation},
+year = {2024},
+isbn = {9798400711312},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3680528.3687570},
+doi = {10.1145/3680528.3687570},
+booktitle = {SIGGRAPH Asia 2024 Conference Papers},
+articleno = {17},
+numpages = {12},
+keywords = {pixel art, image processing},
+location = {Tokyo, Japan},
+series = {SA '24}
 }
 ```
 
