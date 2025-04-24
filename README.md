@@ -20,7 +20,7 @@
     <a href="#quickstart">Quickstart</a> •
     <a href="#guide">User Guide</a> •
     <a href="#citation">Citation</a> •
-    <a href="#acknowledgement">Acknowledgment</a> •
+    <a href="#acknowledgments">Acknowledgments</a> •
     <a href="#license">License</a>
 </p>
 
@@ -334,7 +334,7 @@ series = {SA '24}
 ```
 
 
-<h2 align="center" id="acknowledgements">📢 Acknowledgements</h2>
+<h2 align="center" id="acknowledgments">📢 Acknowledgments</h2>
 <p align="right"><a href="#title"><sup>▴ Back to top</sup></a></p>
 
 We thank the anonymous reviewers for their constructive feedback. Ximing Xing's open-source version of VectorFusion was instrumental in the development and design of our source code. This work was supported in part by the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation program (grant agreement No. 101003104, ERC CoG MYCLOTH).
