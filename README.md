@@ -27,7 +27,7 @@
 
 <h2 align="center" id="introduction">👾 Introduction</h2>
 
-This is the codebase for our work **SD-πXL: Generating Low-Resolution Quantized Imagery via Score Distillation**, which will be presented at SIGGRAPH Asia 2024. SD-πXL is designed to create low-resolution, color-limited images like pixel art, which are popular in video games and digital design. This tool allows users to input a text prompt or an image, choose a specific image size and color palette, and then automatically generates the desired artwork. SD-πXL ensures the images are both aesthetically pleasing and useful for practical applications like cross-stich embroidery. Our technical paper with detailed explanations can be found [here](https://doi.org/10.1145/3680528.3687570).
+This is the codebase for our work **SD-πXL: Generating Low-Resolution Quantized Imagery via Score Distillation**, which has been be presented at SIGGRAPH Asia 2024. SD-πXL is designed to create low-resolution, color-limited images like pixel art, which are popular in video games and digital design. This tool allows users to input a text prompt or an image, choose a specific image size and color palette, and then automatically generates the desired artwork. SD-πXL ensures the images are both aesthetically pleasing and useful for practical applications like cross-stich embroidery. Our technical paper with detailed explanations can be found [here](https://doi.org/10.1145/3680528.3687570).
 
 
 <h2 align="center" id="installation">🔧 Installation</h2>
