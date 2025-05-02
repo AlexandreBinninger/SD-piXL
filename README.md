@@ -5,7 +5,7 @@
     <a href="https://opensource.org/license/MIT"><img src="https://img.shields.io/badge/license-MIT-yellow?style=plastic" alt="license"></a>
     <a href="https://alexandrebinninger.github.io/SD-piXL"><img src="https://img.shields.io/badge/website-Gitpage-blue?style=plastic&logo=github&logoColor=white" alt="website"></a>
     <a href="https://arxiv.org/abs/2410.06236" alt ="arXiv"> <img src="https://img.shields.io/badge/arXiv-2410.06236-b31b1b.svg"/></a>
-    <a src="https://doi.org/10.1145/3680528.3687570" alt="doi">
+    <a href="https://doi.org/10.1145/3680528.3687570" alt="doi">
     <img src="https://img.shields.io/badge/DOI-10.1145%2F3680528.3687570-red?style=plastic&logo=doi&color=red" alt="website"></a>
 </p>
 
